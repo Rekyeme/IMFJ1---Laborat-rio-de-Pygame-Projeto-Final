@@ -1,1 +1,1 @@
-# IMFJ1---Laborat-rio-de-Pygame-Projeto-Final
+# IMFJ1-Laboratrio-de-Pygame-Projeto-Final
