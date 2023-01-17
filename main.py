@@ -7,7 +7,7 @@ pygame.init()
 WIDTH = 800
 HEIGHT = 600
 SCREEN = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Single Player Snooker Game ")
+pygame.display.set_caption(" ")
 
 
 while True:  # main game loop;           
