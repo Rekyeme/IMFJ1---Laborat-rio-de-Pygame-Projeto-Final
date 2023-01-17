@@ -18,8 +18,12 @@ class Program:
         self.all_sprites = pygame.sprite.Group()
         self.collision_sprites = pygame.sprite.Group()
 
+        # Scaling Factor
+        bg_HEIGHT = pygame.image.load("../IMFJ1---Laboratorio-de-Pygame-Projeto-Final/Assets/background.png").get_height()
+        self.scaling_factor = HEIGHT / bg_HEIGHT
+
         # Sprite Configuration
-        BG(self.all_sprites)
+        BG(self.all_sprites, self.scaling_factor)
 
     # Program main loop;
     def run(self):
@@ -35,6 +39,8 @@ class Program:
                     sys.exit()
 
             # Updates the display and limits the frame-rate;
+            self.display_surface.fill("black")
+            self.all_sprites.update(dt)
             self.all_sprites.draw(self.display_surface)
 
             pygame.display.update()
